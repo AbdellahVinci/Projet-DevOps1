@@ -1,11 +1,9 @@
 {
   "dependencies": {
     "jasmine": "^5.4.0"
-
   },
-  
-  "scripts":{
-    "test" : "jasmine"
-
-  }
+  "scripts": {
+    "test": "jasmine"
+  },
+  "type": "module"
 }
