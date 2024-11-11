@@ -3,9 +3,7 @@ export class Main {
         let lamps = ['X', 'X', 'X', 'X']; 
         const count = minutes % 5; 
     
-        for (let i = 0; i < count; i++) {
-          lamps[i] = 'Y'; 
-        }
+        this.turnOnYellowLamps(count, lamps);
         return console.log(lamps); 
     }
 
@@ -27,9 +25,7 @@ export class Main {
       let lamps = ['X', 'X', 'X', 'X']; 
       const count =hours  % 5; 
   
-      for (let i = 0; i < count; i++) {
-        lamps[i] = 'Y'; 
-      }
+      this.turnOnYellowLamps(count, lamps);
       return console.log(lamps); 
     }
 
@@ -40,6 +36,12 @@ export class Main {
 
 
 
+
+  turnOnYellowLamps(count, lamps) {
+    for (let i = 0; i < count; i++) {
+      lamps[i] = 'Y';
+    }
+  }
 
     isRedLampPosition(i) {
         return (i + 1) % 3 === 0;
