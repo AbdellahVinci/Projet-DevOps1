@@ -1,11 +1,25 @@
 export class Main {
     getSimpleMinutes(minutes) {
-        let lamps = ['X', 'X', 'X', 'X']; // Initialisation avec 4 lampes éteintes ('X')
-        const count = minutes % 5; // Nombre de lampes à allumer
+        let lamps = ['X', 'X', 'X', 'X']; 
+        const count = minutes % 5; 
     
         for (let i = 0; i < count; i++) {
-          lamps[i] = 'Y'; // On allume la lampe (en jaune)
+          lamps[i] = 'Y'; 
         }
-        return console.log(lamps); // Convertit le tableau en une chaîne de caractères
-      }
+        return console.log(lamps); 
+    }
+
+    getMinutesFive(minutes){
+        let lamps = ['X','X','X','X','X','X','X','X','X','X','X'];
+        const count = Math.floor(minutes / 5);
+
+        for(let i = 0; i < count; i++){
+            if((i + 1) % 3 === 0){
+                lamps[i] = 'R';
+            } else {
+                lamps[i] = 'J';
+            }
+        }
+        return console.log(lamps);
+    }
  }

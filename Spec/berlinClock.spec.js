@@ -39,10 +39,23 @@ describe("The function should return the color of the lamp ", function() {
        
         
         expect(result.getSimpleMinutes(4));
-    });
+    }); 
    
+    it("should retrun (JXXXXXXXXXX) when the input is 5", function() {
+        
+        expect(result.getMinutesFive(5));
+    });
 
+    it("should retrun (JJRXXXXXXXX) when the input is 15", function() {
+        
+        expect(result.getMinutesFive(15));
+    });
     
+
+    it("should retrun (JJRJJRJJRXX) when the input is 45", function() {
+        
+        expect(result.getMinutesFive(45));
+    });
 
 
 
