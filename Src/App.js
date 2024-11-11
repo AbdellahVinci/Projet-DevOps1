@@ -4,12 +4,6 @@ export class Main {
         const count = minutes % 5; 
     
         for (let i = 0; i < count; i++) {
-<<<<<<< HEAD
-          lamps[i] = 'Y';
-        }
-        return console.log(lamps);
-      }
-=======
           lamps[i] = 'Y'; 
         }
         return console.log(lamps); 
@@ -28,9 +22,29 @@ export class Main {
         }
         return console.log(lamps);
     }
+    
+    getSimpleHours(hours){
+      let lamps = ['X', 'X', 'X', 'X']; 
+      const count =hours  % 5; 
+  
+      for (let i = 0; i < count; i++) {
+        lamps[i] = 'Y'; 
+      }
+      return console.log(lamps); 
+    }
+
+
+
+
+
+
+
+
 
     isRedLampPosition(i) {
         return (i + 1) % 3 === 0;
     }
->>>>>>> 1f196bdf737eb822cafab6a44af21bb61e2adf66
+    
+
+
  }

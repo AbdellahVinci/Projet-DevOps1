@@ -4,7 +4,7 @@ describe("The function should return the color of the lamp ", function() {
 
     const result = new Main();
 
-
+/*
     it("Initially, all lamps are off  ,it should return (XXXX)", function() {
 
        
@@ -57,6 +57,44 @@ describe("The function should return the color of the lamp ", function() {
         expect(result.getMinutesFive(45));
     });
 
+*/
+
+
+    it("Initially, all lamps are off  ,it should return (XXXX)", function() {
+
+       
+
+        expect(result.getSimpleHours(0));
+    });
+
+    it("should return (YXXX) when the input is 1", function() {
+
+        
+        
+        expect(result.getSimpleHours(1));
+    });
+
+    
+    it("should return (YYXX) when the input is 2", function() {
+
+        
+        
+        expect(result.getSimpleHours(2));
+    });
+
+    it("should return (YYYX) when the input is 3", function() {
+
+        
+        
+        expect(result.getSimpleHours(3));
+    });
+    
+    it("should return (YYYY) when the input is 4", function() {
+
+       
+        
+        expect(result.getSimpleHours(4));
+    }); 
 
 
 
