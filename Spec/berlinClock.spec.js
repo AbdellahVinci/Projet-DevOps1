@@ -1,21 +1,49 @@
 import { Main } from "../Src/App.js"; 
 
-describe(" The function should return the color of the lamp ", function() {
+describe("The function should return the color of the lamp ", function() {
 
 
-  const result = new Main();
+    it("Initially, all lamps are off  ,it should return (XXXX)", function() {
 
+        const result = new Main();
 
-  it("Initially, the lamp is off (black)", function() {
+        expect(result.getSimpleMinutes(0));
+    });
+
+    it("should return (YXXX) when the input is 1", function() {
+
+        const result = new Main();
+        
+        expect(result.getSimpleMinutes(1));
+    });
+
     
-     
-      expect(result.minutesBy1()).toBe("black");
-  })
+    it("should return (YYXX) when the input is 2", function() {
 
-  it("“After 1 minute, the lamp should light up orange”", function() {
+        const result = new Main();
+        
+        expect(result.getSimpleMinutes(2));
+    });
+
+    it("should return (YYYX) when the input is 3", function() {
+
+        const result = new Main();
+        
+        expect(result.getSimpleMinutes(3));
+    });
+    it("should return (YYYY) when the input is 4", function() {
+
+        const result = new Main();
+        
+        expect(result.getSimpleMinutes(4));
+    });
+   
+
     
-      
-      const color = result.minutesBy1(60); 
-      expect(color).toBe("yellow");
-  });
+
+
+
+
+
+   
 });
