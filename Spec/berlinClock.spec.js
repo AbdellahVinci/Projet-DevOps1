@@ -4,7 +4,8 @@ describe("The function should return the color of the lamp ", function() {
 
     const result = new Main();
 
-/*
+    //Step 1
+
     it("Initially, all lamps are off  ,it should return (XXXX)", function() {
 
        
@@ -39,8 +40,16 @@ describe("The function should return the color of the lamp ", function() {
        
         
         expect(result.getSimpleMinutes(4));
+
+
+
     }); 
    
+
+
+    // Step 2
+
+    
     it("should retrun (JXXXXXXXXXX) when the input is 5", function() {
         
         expect(result.getMinutesFive(5));
@@ -57,7 +66,11 @@ describe("The function should return the color of the lamp ", function() {
         expect(result.getMinutesFive(45));
     });
 
-*/
+
+
+
+
+    //Step 3
 
 
     it("Initially, all lamps are off  ,it should return (XXXX)", function() {
