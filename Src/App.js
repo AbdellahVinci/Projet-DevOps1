@@ -4,8 +4,33 @@ export class Main {
         const count = minutes % 5; 
     
         for (let i = 0; i < count; i++) {
+<<<<<<< HEAD
           lamps[i] = 'Y';
         }
         return console.log(lamps);
       }
+=======
+          lamps[i] = 'Y'; 
+        }
+        return console.log(lamps); 
+    }
+
+    getMinutesFive(minutes){
+        let lamps = ['X','X','X','X','X','X','X','X','X','X','X'];
+        const count = Math.floor(minutes / 5);
+
+        for(let i = 0; i < count; i++){
+            if(this.isRedLampPosition(i)){
+                lamps[i] = 'R';
+            } else {
+                lamps[i] = 'J';
+            }
+        }
+        return console.log(lamps);
+    }
+
+    isRedLampPosition(i) {
+        return (i + 1) % 3 === 0;
+    }
+>>>>>>> 1f196bdf737eb822cafab6a44af21bb61e2adf66
  }
