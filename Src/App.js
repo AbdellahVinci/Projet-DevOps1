@@ -14,12 +14,16 @@ export class Main {
         const count = Math.floor(minutes / 5);
 
         for(let i = 0; i < count; i++){
-            if((i + 1) % 3 === 0){
+            if(this.isRedLampPosition(i)){
                 lamps[i] = 'R';
             } else {
                 lamps[i] = 'J';
             }
         }
         return console.log(lamps);
+    }
+
+    isRedLampPosition(i) {
+        return (i + 1) % 3 === 0;
     }
  }
