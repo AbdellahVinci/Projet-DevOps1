@@ -40,7 +40,19 @@ export class Main {
       return console.log(lamps); 
     }
 
-    
+
+
+    getSeconds(seconds){
+        let lamp = 'X';
+
+        for(let i = 0; i < 1; i ++){
+            if(seconds % 2 === 0){
+                lamp = 'R'
+            } 
+        }
+        return console.log(lamp);
+
+    }
 
 
 
