@@ -43,7 +43,7 @@ export class Main {
 
 
     getSeconds(seconds){
-        let lamp = 'X';
+        let lamp = ['X'];
 
         lamp = this.isEvenNumber(seconds, lamp);
         
@@ -54,10 +54,25 @@ export class Main {
 
 
 
+    getBerlinClock(hours, minutes, seconds) {
+        const berlinClock = {
+            seconds: this.getSeconds(seconds),
+            fiveHourLamps: this.getHoursFive(hours),
+            simpleHourLamps: this.getSimpleHours(hours),
+            fiveMinuteLamps: this.getMinutesFive(minutes),
+            simpleMinuteLamps: this.getSimpleMinutes(minutes),
+        };
+    
+        return berlinClock; 
+    }
+    
+
+
+
     isEvenNumber(seconds, lamp) {
         for (let i = 0; i < 1; i++) {
             if (seconds % 2 === 0) {
-                lamp = 'R';
+                lamp = ['R'];
             }
         }
         return lamp;
