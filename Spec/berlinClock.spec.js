@@ -4,10 +4,10 @@ describe("The function should return the color of the lamp ", function() {
 
     const result = new Main();
 
-// step 1
+ // Step 1
 
 
-  /*  it("Initially, all lamps are off  ,it should return (XXXX)", function() {
+  it("Initially, all lamps are off  ,it should return (XXXX)", function() {
 
        
 
@@ -67,7 +67,7 @@ describe("The function should return the color of the lamp ", function() {
         expect(result.getMinutesFive(45));
     });
 
-// step 3
+    // Step 3
 
 
     it("Initially, all lamps are off  ,it should return (XXXX)", function() {
@@ -107,7 +107,7 @@ describe("The function should return the color of the lamp ", function() {
     }); 
     
 
-    // step 4
+    // Step 4
 
     it("should retrun (RXXX) when the input is 5", function() {
         
@@ -125,7 +125,7 @@ describe("The function should return the color of the lamp ", function() {
     it("should retrun (RRRX) when the input is 15", function() {
         
         expect(result.getHoursFive(15));
-    }); */
+    }); 
 
 
     // Step 5

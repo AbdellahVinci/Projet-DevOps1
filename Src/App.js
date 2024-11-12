@@ -45,17 +45,23 @@ export class Main {
     getSeconds(seconds){
         let lamp = 'X';
 
-        for(let i = 0; i < 1; i ++){
-            if(seconds % 2 === 0){
-                lamp = 'R'
-            } 
-        }
+        lamp = this.isEvenNumber(seconds, lamp);
+        
         return console.log(lamp);
 
     }
 
 
 
+
+    isEvenNumber(seconds, lamp) {
+        for (let i = 0; i < 1; i++) {
+            if (seconds % 2 === 0) {
+                lamp = 'R';
+            }
+        }
+        return lamp;
+    }
 
     turnOnRedLamps(count, lamps) {
     for (let i = 0; i < count; i++) {
