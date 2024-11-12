@@ -4,6 +4,10 @@ describe("The function should return the color of the lamp ", function() {
 
     const result = new Main();
 
+    afterEach(() => {
+        console.log(" ");
+    });
+
  // Step 1
  
 
@@ -13,7 +17,6 @@ describe("The function should return the color of the lamp ", function() {
        
 
         expect(result.getSimpleMinutes(0));
-        console.log(" ");
     });
 
     it("should return (YXXX) when the input is 1", function() {
@@ -21,7 +24,6 @@ describe("The function should return the color of the lamp ", function() {
         
         
         expect(result.getSimpleMinutes(1));
-        console.log(" ");
     });
 
     
@@ -30,7 +32,6 @@ describe("The function should return the color of the lamp ", function() {
         
         
         expect(result.getSimpleMinutes(2));
-        console.log(" ");
     });
 
     it("should return (YYYX) when the input is 3", function() {
@@ -38,7 +39,6 @@ describe("The function should return the color of the lamp ", function() {
         
         
         expect(result.getSimpleMinutes(3));
-        console.log(" ");
     });
     
     it("should return (YYYY) when the input is 4", function() {
@@ -46,7 +46,6 @@ describe("The function should return the color of the lamp ", function() {
        
         
         expect(result.getSimpleMinutes(4));
-        console.log(" ");
 
 
 
@@ -60,20 +59,17 @@ describe("The function should return the color of the lamp ", function() {
     it("should retrun (JXXXXXXXXXX) when the input is 5", function() {
         
         expect(result.getMinutesFive(5));
-        console.log(" ");
     });
 
     it("should retrun (JJRXXXXXXXX) when the input is 15", function() {
         
         expect(result.getMinutesFive(15));
-        console.log(" ");
     });
     
 
     it("should retrun (JJRJJRJJRXX) when the input is 45", function() {
         
         expect(result.getMinutesFive(45));
-        console.log(" ");
     });
 
     // Step 3
@@ -84,7 +80,6 @@ describe("The function should return the color of the lamp ", function() {
        
 
         expect(result.getSimpleHours(0));
-        console.log(" ");
     });
 
     it("should return (YXXX) when the input is 1", function() {
@@ -92,7 +87,6 @@ describe("The function should return the color of the lamp ", function() {
         
         
         expect(result.getSimpleHours(1));
-        console.log(" ");
     });
 
     
@@ -101,7 +95,6 @@ describe("The function should return the color of the lamp ", function() {
         
         
         expect(result.getSimpleHours(2));
-        console.log(" ");
     });
 
     it("should return (YYYX) when the input is 3", function() {
@@ -109,7 +102,6 @@ describe("The function should return the color of the lamp ", function() {
         
         
         expect(result.getSimpleHours(3));
-        console.log(" ");
     });
     
     it("should return (YYYY) when the input is 4", function() {
@@ -117,7 +109,6 @@ describe("The function should return the color of the lamp ", function() {
        
         
         expect(result.getSimpleHours(4));
-        console.log(" ");
     }); 
     
 
@@ -126,7 +117,6 @@ describe("The function should return the color of the lamp ", function() {
     it("should retrun (RXXX) when the input is 5", function() {
         
         expect(result.getHoursFive(5));
-        console.log(" ");
     });
 
 
@@ -134,14 +124,12 @@ describe("The function should return the color of the lamp ", function() {
     it("should retrun (RRXX) when the input is 10", function() {
         
         expect(result.getHoursFive(10));
-        console.log(" ");
     });
 
 
     it("should retrun (RRRX) when the input is 15", function() {
         
         expect(result.getHoursFive(15));
-        console.log(" ");
     }); 
 
 
@@ -150,27 +138,22 @@ describe("The function should return the color of the lamp ", function() {
     it("should retrun (X) when the input is 1", function() {
         
         expect(result.getSeconds(1));
-        console.log(" ");
     });
 
  
     it("should retrun (R) when the input is 4", function() {
         
         expect(result.getSeconds(4));
-          console.log(" ");
     });
     
     it("should retrun (X) when the input is 7", function() {
         
         expect(result.getSeconds(7));
-        
-        console.log(" ");
     });
 
     it("should retrun (R) when the input is 10", function() {
         
         expect(result.getSeconds(10));
-        console.log(" ");
     });
     
     
@@ -179,7 +162,7 @@ describe("The function should return the color of the lamp ", function() {
     it("should return the correct Berlin Clock representation for 15:30:10", function() {
         
         expect(result.getBerlinClock(15,30,10));
-        console.log(" ");
+       
     });
 
     
@@ -187,7 +170,7 @@ describe("The function should return the color of the lamp ", function() {
     it("should return the correct Berlin Clock representation for 20:17:5", function() {
         
         expect(result.getBerlinClock(20,17,5));
-        console.log(" ");
+         
         
     });
 

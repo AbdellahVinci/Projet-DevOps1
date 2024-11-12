@@ -15,7 +15,7 @@ export class Main {
             if(this.isRedLampPosition(i)){
                 lamps[i] = 'R';
             } else {
-                lamps[i] = 'J';
+                lamps[i] = 'Y';
             }
         }
         return console.log(lamps);
@@ -25,12 +25,15 @@ export class Main {
       let lamps = ['X', 'X', 'X', 'X']; 
       const count =hours  % 5; 
   
-      this.turnOnYellowLamps(count, lamps);
+      this.turnOnRedLamps(count, lamps);
+    
       return console.log(lamps); 
     }
 
 
 
+
+    
     getHoursFive(hours){
       let lamps = ['X', 'X', 'X', 'X']; 
       const count = Math.floor(hours / 5);
@@ -39,7 +42,7 @@ export class Main {
 
       return console.log(lamps); 
     }
-
+ 
 
 
     getSeconds(seconds){
@@ -83,6 +86,8 @@ export class Main {
       lamps[i] = 'R';
     }
   }
+  
+
 
   turnOnYellowLamps(count, lamps) {
     for (let i = 0; i < count; i++) {
