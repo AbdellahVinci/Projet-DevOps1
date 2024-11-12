@@ -30,13 +30,12 @@ export class Main {
     }
 
 
+
     getHoursFive(hours){
       let lamps = ['X', 'X', 'X', 'X']; 
       const count = Math.floor(hours / 5);
   
-      for(let i =0 ; i<count ; i++){
-        lamps[i]='R'
-      }
+      this.turnOnRedLamps(count, lamps);
 
       return console.log(lamps); 
     }
@@ -45,6 +44,12 @@ export class Main {
 
 
 
+
+    turnOnRedLamps(count, lamps) {
+    for (let i = 0; i < count; i++) {
+      lamps[i] = 'R';
+    }
+  }
 
   turnOnYellowLamps(count, lamps) {
     for (let i = 0; i < count; i++) {
