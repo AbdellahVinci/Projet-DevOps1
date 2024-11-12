@@ -40,11 +40,8 @@ export class Main {
       return console.log(lamps); 
     }
 
+  
     
-
-
-
-
     turnOnRedLamps(count, lamps) {
     for (let i = 0; i < count; i++) {
       lamps[i] = 'R';
