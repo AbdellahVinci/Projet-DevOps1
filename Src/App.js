@@ -30,9 +30,18 @@ export class Main {
     }
 
 
+    getHoursFive(hours){
+      let lamps = ['X', 'X', 'X', 'X']; 
+      const count = Math.floor(hours / 5);
+  
+      for(let i =0 ; i<count ; i++){
+        lamps[i]='R'
+      }
 
+      return console.log(lamps); 
+    }
 
-
+    
 
 
 
@@ -49,4 +58,4 @@ export class Main {
     
 
 
- }
+  }
